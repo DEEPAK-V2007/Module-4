@@ -14,12 +14,23 @@ To write a Python program that calculates the **area of a circle** based on the 
 4. **Execute the program**: Create an object of the class and call the method with the radius value.
 
 ## 🧾 Program
+```
+class cse:
+    def mech(self, r):
+        area = 3.14 * r * r
+        print(f"The area of the circle with radius {r} is: {area}")
 
-Add code here
+r = float(input("Enter the radius of the circle: "))
 
+obj = cse()
+obj.mech(r)
+```
 ## Output
 
+<img width="595" height="208" alt="{2DC1E937-2F37-4023-A11E-03FE1F070F46}" src="https://github.com/user-attachments/assets/f1252b6e-57d2-41e0-8efa-43d12e9e7fbf" />
+
 ## Result
+Thus, the Python program to calculate the area of a circle using a class and method was successfully implemented and executed, and the output was verified.
 
 ## EX 17:Dictionary Operations in Python: Merging Two Dictionaries
 
