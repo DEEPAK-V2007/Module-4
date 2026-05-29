@@ -44,12 +44,24 @@ To write a Python program that merges **two dictionaries** and combines their ke
 3. Call the `merge()` function and print the merged dictionary.
 
 ## 🧾 Program
+```
+dict1 = {'a': 10, 'b': 20}
+dict2 = {'c': 30, 'd': 40}
 
-Add code here
+def merge():
+    merged_dict = {**dict1, **dict2}
+    return merged_dict
 
+print(f"The first dictionary is: {dict1}")
+print(f"The second dictionary is: {dict2}")
+print(f"The merged dictionary is: {merge()}")
+```
 ## Output
 
+<img width="732" height="219" alt="{EB54FE64-794C-4438-8C79-31B45956A03B}" src="https://github.com/user-attachments/assets/1dd5a83d-a4b7-4624-8f80-fffcba887ac8" />
+
 ## Result
+Thus, the Python program to merge two dictionaries using the ** unpacking operator was successfully implemented and executed, and the output was verified.
 
 ## EX 18:🔤 Dictionary-Python Program to Sort a Dictionary by Keys and Values
 
@@ -75,11 +87,27 @@ To write a Python program that sorts a dictionary's:
 6. **End the program.**
 
 ## 🧪Program
-Add Code here
+```
+dictionary = {
+    'd': 'dog',
+    'b': 'banana',
+    'a': 'apple',
+    'c': 'cat'
+}
 
+sorted_keys = dict(sorted(dictionary.items()))
+sorted_values = dict(sorted(dictionary.items(), key=lambda item: item[1]))
+
+print(f"The original dictionary is: {dictionary}")
+print(f"The dictionary sorted by keys is: {sorted_keys}")
+print(f"The dictionary sorted by values is: {sorted_values}")
+```
 ## Sample Output
 
+<img width="1012" height="219" alt="image" src="https://github.com/user-attachments/assets/18045145-6e0e-4942-a70c-593f9bb77faf" />
+
 ## Result
+Thus, the Python program to sort a dictionary by keys and values was successfully implemented and executed, and the output was verified.
 
 ## EX 19:Exception Handling in Python: Avoiding Index Errors
 
@@ -94,11 +122,20 @@ To write a Python program that handles an **IndexError** when trying to access a
 3. Print the result based on whether the index access succeeds or fails.
 
 ## 🧾 Program
-Add code here
+```
+list1 = [10, 20, 30]
 
+try:
+    print(f"The element at index 5 is: {list1[5]}")
+except IndexError:
+    print(f"You're out of list range")
+```
 ## Output
 
+<img width="486" height="225" alt="image" src="https://github.com/user-attachments/assets/250f142f-b8ef-4c92-ad15-293d87151271" />
+
 ## Result
+Thus, the Python program to handle an IndexError using a try-except block was successfully implemented and executed, and the output was verified.
 
 ## EX 20:File Handling in Python: Count Lines Not Starting with 'T'
 
@@ -114,8 +151,32 @@ To write a Python program that counts the number of lines in a text file `story.
 4. After processing all lines, print the `count` value, which represents the number of lines that do not start with `'T'`.
 
 ## 🧾 Program
-Add code here
+```
+file = open("story.txt", "w")
 
+file.write("This is a story\n")
+file.write("Apple is red\n")
+file.write("Today is sunny\n")
+file.write("Banana is yellow\n")
+file.write("Tree is tall\n")
+
+file.close()
+
+count = 0
+
+file = open("story.txt", "r")
+
+for line in file:
+    if line[0] != 'T':
+        count += 1
+
+file.close()
+
+print(f"The number of lines that do not start with 'T' is: {count}")
+```
 ## Output
 
+<img width="618" height="213" alt="{C07E7609-9F9E-4313-AD0E-62567A9B97FD}" src="https://github.com/user-attachments/assets/64899a94-d644-4673-8649-2cb3decd727c" />
+
 ## Result
+Thus, the Python program to count the number of lines in a file that do not start with the letter 'T' was successfully implemented and executed, and the output was verified.
